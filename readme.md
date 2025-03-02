@@ -64,4 +64,4 @@
 
 ### Візуалізація графіка результатів випробувань
 
-![Результати випробувань](https://github.com/[nataliia-smalchenko]/[goit-algo-fp]/blob/[main]/Figure_1.png?raw=true)
+![Результати випробувань](https://github.com/nataliia-smalchenko/goit-algo-fp/blob/main/Figure_1.png?raw=true)
