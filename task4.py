@@ -4,6 +4,7 @@ import networkx as nx
 import matplotlib.pyplot as plt
 
 class Node:
+    """Клас для вузлів дерева"""
     def __init__(self, key, color="skyblue"):
         self.left = None
         self.right = None
@@ -12,6 +13,7 @@ class Node:
         self.id = str(uuid.uuid4())
 
 def build_heap_tree(heap):
+    """Побудова дерева з купи"""
     if not heap:
         return None
     
@@ -28,6 +30,7 @@ def build_heap_tree(heap):
     return nodes[0]  # Кореневий вузол
 
 def add_edges(graph, node, pos, x=0, y=0, layer=1):
+    """Функція для додавання ребер до графу"""
     if node is not None:
         graph.add_node(node.id, color=node.color, label=node.val)
         if node.left:
@@ -43,8 +46,9 @@ def add_edges(graph, node, pos, x=0, y=0, layer=1):
     return graph
 
 def draw_heap(heap):
+    """Малювання купи"""
     if not heap:
-        print("Empty heap!")
+        print("Купа порожня!")
         return
     
     tree_root = build_heap_tree(heap)
